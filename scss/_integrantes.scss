@@ -1,0 +1,47 @@
+.integrantes {
+    max-height:100%;
+    max-width: 100%;
+    background-color: black;
+    color:white;
+    height: 100%;
+    padding:15px;
+    
+}
+
+.integrantes__margin {
+   margin-top:30px;
+    
+}
+
+.integrantesTitle {
+    padding-top:20px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color:white;
+
+}
+
+@media only screen and (max-width: 767px) {
+	.integrantes {
+		text-align: center;
+	}
+}
+.border-5 {
+	border-width: 5px !important;
+}
+.border-w-5 {
+	border-width: 5px !important;
+}
+.border-white {
+	border: 1px solid transparent;
+	border-color: #fff !important;
+}
+hr.hr-primary {
+	border-top-color: #CC164D !important;
+}
+em {
+	font-style: italic;
+}
+.font-weight-normal {
+	font-weight: 400 !important;
+}

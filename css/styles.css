@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    max-width: 100%;
+}
+
+/* Barra de navegación */
+
+nav {
+    width: 100%;
+    height: 100%;
+    margin:0px; 
+    background-color: black;
+    border-bottom: solid 3px red;
+}
+
+.navItem {
+
+    font-family: "Lato", sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Animacion Menu*/ 
+
+.snip1217 a {
+    padding: 0.3em 0;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .snip1217 a:before,
+  .snip1217 a:after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: red;
+    width: 0;
+  }
+  .snip1217 a:before {
+    top: 0;
+    left: 0;
+  }
+  .snip1217 a:after {
+    bottom: 0;
+    right: 0;
+  }
+  .snip1217 a:hover,
+  .snip1217 .current a {
+    color: #ffffff;
+  }
+  .snip1217 a:hover:before,
+  .snip1217 .current a:before,
+  .snip1217 a:hover:after,
+  .snip1217 .current a:after {
+    width: 100%;
+  }
+
+
+/* Párrafos y títulos */ 
+
+.estiloTitulo {
+
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.estiloParrafo {
+
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+/* Tablas */
+
+
+th {
+
+    color: green;
+    background-color: rgb(238, 232, 232);
+}
+
+table {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Formulario */ 
+
+form {
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+
+}
+
+/* Footer */ 
+
+.footerConfig {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:47px;   
+    background-color:black ;
+    border-top: solid 3px red;
+}
+
+.textoFooter {
+    color: white;
+}
+
+
+/* Index */ 
+
+
+.bandTextBox {
+    color: white;
+    background: black;
+    color: white;
+}
+
+.bandText {
+    font-style: "Lato", sans-serif;
+    font-size: 2.5rem;
+    
+}
+
+.bandTextBody {
+    font-style: "Lato", sans-serif;
+    font-size: 1.1rem;
+    
+}
+
+
+/* Escuchalos */ 
+
+.loClasico {
+
+    padding-bottom:40px;
+    margin: 10px;
+}
+
+iframe {
+
+    padding:10px;
+    margin: 10px;
+}
+
+
+/* Discografia */ 
+
+.coverFlow {
+
+    display: grid;
+    grid-template-columns:repeat (4, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-column-gap: 14px ;
+    grid-row-gap: 10px;
+    margin: 10px;
+    padding-bottom: 40px;
+    justify-items: center;
+    grid-template-areas:
+    "disco1 disco2 disco3 disco4"
+    "disco5 disco6 disco7 disco8";
+    
+}
+
+.disco1 { grid-area: disco1; }
+.disco2 { grid-area: disco2; }
+.disco3 { grid-area: disco3; }
+.disco4 { grid-area: disco4; }
+.disco5 { grid-area: disco5; }
+.disco6 { grid-area: disco6; }
+.disco7 { grid-area: disco7; }
+.disco8 { grid-area: disco8; }
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .coverFlow {
+display:flex;
+flex-direction: column;
+align-items: center; } }
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .coverFlow {
+display:flex;
+flex-direction: column;
+align-items: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .coverFlow {
+        display:flex;
+        flex-direction: column;
+        align-items: center; } }
+
+@media only screen and (min-width: 1024px){
+    .coverFlow {
+grid-template-areas: "disco1 disco2 disco3 disco4"
+"disco5 disco6 disco7 disco8"} }
+
+/* Integrantes */ 
+
+.integrantes {
+    max-height:100%;
+    max-width: 100%;
+    background-color: black;
+    color:white;
+    height: 100%;
+    padding:15px;
+    
+}
+
+.integrantesTexto {
+   margin-top:30px;
+    
+}
+.integrantesTitle {
+    padding-top:20px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color:white;
+
+}
+
+@media only screen and (max-width: 720px){
+    .integrantes {
+text-align:center; } }
+
+.border-5, .border-w-5 {
+    border-width: 5px !important;
+}
+.border-white {
+    border: 1px solid transparent;
+    border-color: #fff !important;
+}
+hr.hr-primary {
+    border-top-color: #CC164D!important;
+}
+em {
+    font-style: italic;
+}
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+

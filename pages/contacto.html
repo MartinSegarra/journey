@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Journey | Contacto
+        </title>
+        <meta name="description" content="¿Tenés preguntas, comentarios o sugerencias sobre Journey? Completá el formulario de contacto y pronto nos comunicaremos con vos.">
+        <meta name="keywords" content="Journey, Banda, Contacto, Sugerencias, Preguntas, Comentarios, Formulario">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Menú Principal -->
+    
+    
+        <header>
+         
+            
+          <nav class="navbar navbar-expand-xl navbar-dark static-top">
+            <div class="container-fluid nav-fill">
+              <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="Logo">
+                  </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse snip1217 menuText navItem w-100" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto w-100">
+                  <li class="nav-item">
+                    <a class="nav-link navItem" href="../index.html">HOME
+                          <span class="sr-only">(current)</span>
+                        </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItem" href="integrantes.html">INTEGRANTES<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItem" href="discografia.html">DISCOGRAFÍA<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItem" href="escuchalos.html">ESCUCHALOS<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link navItem" href="contacto.html">CONTACTO<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+            </header>
+
+        <main>
+
+            <section>
+
+            <!-- Contacto-->
+            <div>
+                <h2 class="estiloTitulo__black">Contacto</h2>
+                    <p class="estiloParrafo__black">Por favor completá el formulario con tus datos y pronto nos comunicaremos con vos </p>
+            </div>
+
+            <!-- Formulario -->
+            <div>
+                <form name="form_contacto" action="gracias.html" method="post">
+                <!-- Nombre -->
+                <label for="nombre">Nombre y Apellido</label> 
+                <input type="text" name="nombre" id="nombre" placeholder="Steve Perry" required>
+                </br></br>
+                <!-- Email -->
+                <label for="email">Email</label> 
+                <input type="email" name="email" id="email" placeholder="steveperry@journey.com" required>
+                </br></br>
+                <!-- Edad -->
+                <label for="edad">Edad</label>
+                <select name="edad" id="edad" required>
+                    <option selected="selected">Seleccione su edad</option>
+                    <option value="Menos_18">Menos de 18 años</option>
+                    <option value="18-35">18 a 35 años</option>
+                    <option value="36-70">36 a 70 años</option>
+                    <option value="Mas_70">Mayor de 70 años</option>
+                </select>
+                </br></br>
+                <!-- Estado Civil -->
+                <label for="estado_civil">Estado Civil</label></br>
+                <input type="radio" name="estado_civil" id="soltero" value="soltero">
+                <label for="soltero">Soltero/a</label></br>
+                <input type="radio" name="estado_civil" id="casado" value="casado">
+                <label for="casado">Casado/a</label></br>
+                <input type="radio" name="estado_civil" id="viudi" value="viudo">
+                <label for="viudo">Viudo/a</label>
+                </br></br>
+                <!-- Mensaje -->
+                <label for="mensaje">Dejanos tu mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="10" col="50" placeholder="Mensaje"></textarea>
+                </br> </br> 
+                <!-- Checkbox -->
+                <label for="preferencias">¿Qué tipo de información te gustaría recibir?</label></br>
+                <input type="checkbox" name="canciones" id="canciones" value="canciones" checked="checked">
+                <label for="canciones">Nuevas canciones</label></br>
+                <input type="checkbox" name="recitales" id="recitales" value="recitales" checked="checked">
+                <label for="recitales">Próximos recitales</label></br>
+                <input type="checkbox" name="entrevistas" id="entrevistas" value="entrevistas" checked="checked">
+                <label for="entrevistas">Entrevistas exclusivas</label></br>
+                <input type="checkbox" name="noticias" id="noticias" value="noticias" checked="checked">
+                <label for="noticias">Noticias y novedades</label>
+                </br></br>
+                <!-- Botones -->
+                <input type="submit" name="enviar_formulario" value="Enviar formulario" />
+                <input type="reset" name="limpiar_formulario" value="Limpiar formulario" />
+                
+                
+                </form>
+                
+            </div>
+
+          </section>
+
+        </main>
+
+        <footer>
+            <div class="footerConfig">
+            <p class="textoFooter__white"> Todos los derechos reservados</p>
+          </div>
+        </footer>
+
+        <script src="../js/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+  
+        <script type="text/script" src="../js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  
+
+    </body>
+    
+</html>

@@ -1,0 +1,15 @@
+.bandTextBox {
+	color: white;
+	background: black;
+}
+
+.bandText__font {
+	@extend .bandTextBox;
+	font-style: "Lato", sans-serif;
+	font-size: 2.5rem;
+}
+
+.bandTextBody__font {
+	@extend .bandText__font;
+	font-size: 1.1rem;
+}
