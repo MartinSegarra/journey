@@ -61,63 +61,46 @@
 
             <section>
 
-            <!-- Contacto-->
-            <div>
-                <h2 class="estiloTitulo__black">Contacto</h2>
-                    <p class="estiloParrafo__black">Por favor completá el formulario con tus datos y pronto nos comunicaremos con vos </p>
-            </div>
 
             <!-- Formulario -->
-            <div>
-                <form name="form_contacto" action="gracias.html" method="post">
-                <!-- Nombre -->
-                <label for="nombre">Nombre y Apellido</label> 
-                <input type="text" name="nombre" id="nombre" placeholder="Steve Perry" required>
-                </br></br>
-                <!-- Email -->
-                <label for="email">Email</label> 
-                <input type="email" name="email" id="email" placeholder="steveperry@journey.com" required>
-                </br></br>
-                <!-- Edad -->
-                <label for="edad">Edad</label>
-                <select name="edad" id="edad" required>
-                    <option selected="selected">Seleccione su edad</option>
-                    <option value="Menos_18">Menos de 18 años</option>
-                    <option value="18-35">18 a 35 años</option>
-                    <option value="36-70">36 a 70 años</option>
-                    <option value="Mas_70">Mayor de 70 años</option>
-                </select>
-                </br></br>
-                <!-- Estado Civil -->
-                <label for="estado_civil">Estado Civil</label></br>
-                <input type="radio" name="estado_civil" id="soltero" value="soltero">
-                <label for="soltero">Soltero/a</label></br>
-                <input type="radio" name="estado_civil" id="casado" value="casado">
-                <label for="casado">Casado/a</label></br>
-                <input type="radio" name="estado_civil" id="viudi" value="viudo">
-                <label for="viudo">Viudo/a</label>
-                </br></br>
-                <!-- Mensaje -->
-                <label for="mensaje">Dejanos tu mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="10" col="50" placeholder="Mensaje"></textarea>
-                </br> </br> 
-                <!-- Checkbox -->
-                <label for="preferencias">¿Qué tipo de información te gustaría recibir?</label></br>
-                <input type="checkbox" name="canciones" id="canciones" value="canciones" checked="checked">
-                <label for="canciones">Nuevas canciones</label></br>
-                <input type="checkbox" name="recitales" id="recitales" value="recitales" checked="checked">
-                <label for="recitales">Próximos recitales</label></br>
-                <input type="checkbox" name="entrevistas" id="entrevistas" value="entrevistas" checked="checked">
-                <label for="entrevistas">Entrevistas exclusivas</label></br>
-                <input type="checkbox" name="noticias" id="noticias" value="noticias" checked="checked">
-                <label for="noticias">Noticias y novedades</label>
-                </br></br>
-                <!-- Botones -->
-                <input type="submit" name="enviar_formulario" value="Enviar formulario" />
-                <input type="reset" name="limpiar_formulario" value="Limpiar formulario" />
-                
-                
-                </form>
+            <h1 class="mensaje"> ¡Dejanos tu mensaje!</h1>
+            <section">
+              <form action="gracias.html" class="contact-form">
+                <div class="col-sm-6 ">
+                  <div class="input-block">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-block">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-block">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-block">
+                    <label for="titulo">Título del mensaje</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-block textarea">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea rows="3" type="text" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <button class="square-button">Enviar</button>
+                </div>
+              </form>
+            </section>
                 
             </div>
 
@@ -125,9 +108,9 @@
 
         </main>
 
-        <footer>
-            <div class="footerConfig">
-            <p class="textoFooter__white"> Todos los derechos reservados</p>
+        <footer id="sticky-footer" class="py-4 text-white-50 footerConfig">
+          <div class="container text-center">
+            <p class="textoFooter__white">Journey &copy; Todos los derechos reservados.</p>
           </div>
         </footer>
 
