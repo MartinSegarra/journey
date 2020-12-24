@@ -17,7 +17,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="d-flex flex-column">
          <!-- Menú Principal -->
     
          <header>
@@ -63,9 +63,11 @@
             <section> 
 
             <div class="container-fluid text-center">
+              <div class="container-fluid text-center">
                 <h2 class="estiloParrafo__black">Lo Nuevo</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ODdXBFDx8dc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>            
+                allowfullscreen></iframe>   
+                </div>         
             </div>
 
             </section>
@@ -76,7 +78,9 @@
 
             <div class="container-fluid text-center">
                 <h2 class="estiloParrafo__black">Lo Clásico</h2>
+              <div class="container-fluid text-center">
                 <img class= "loClasico" src="../images/band-home.jpg" alt="Journey Band" class="loClasico">
+              </div>
             </div>
 
             </section>
@@ -93,11 +97,13 @@
 
         </main>
 
-        <footer id="sticky-footer" class="py-4 text-white-50 footerConfig">
-          <div class="container text-center">
-            <p class="textoFooter__white">Journey &copy; Todos los derechos reservados.</p>
+        <footer id="sticky-footer">
+          <div class="container-fluid footerConfig">
+              <p class="text-center textoFooter__white">Journey &copy; Todos los derechos reservados.</p>
           </div>
-        </footer>
+      </footer>
+
+
         
         <script src="../js/wow.js"></script>
         <script>
