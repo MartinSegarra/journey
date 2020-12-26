@@ -60,53 +60,35 @@
 
         <main>
 
-            <section class="d-flex flex-column">
-
-
-            <!-- Formulario -->
-            <h1 class="mensaje"> ¡Dejanos tu mensaje!</h1>
-            <section>
-              <form action="gracias.html" class="contact-form">
-                <div class="col-sm-6 ">
-                  <div class="input-block">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="input-block">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="input-block">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="input-block">
-                    <label for="titulo">Título del mensaje</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="input-block textarea">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea rows="3" type="text" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <button class="square-button">Enviar</button>
-                </div>
-              </form>
-            </section>
-                
-            </div>
-
-          </section>
-
+          <section class="get-in-touch">
+            <h1 class="title">¡Dejanos tus datos!</h1>
+            <form name="form_contacto" class="contact-form row" action="gracias.html" method="post">
+               <div class="form-field col-lg-6">
+                  <input id="name" class="input-text js-input" type="text" required>
+                  <label class="label" for="name">Nombre</label>
+               </div>
+               <div class="form-field col-lg-6 ">
+                <input id="lastName" class="input-text js-input" type="text" required>
+                <label class="label" for="company">Apellido</label>
+              </div>
+               <div class="form-field col-lg-6 ">
+                  <input id="email" class="input-text js-input" type="email" required>
+                  <label class="label" for="email">E-mail</label>
+               </div>
+                <div class="form-field col-lg-6 ">
+                  <input id="phone" class="input-text js-input" type="text" required>
+                  <label class="label" for="phone">Teléfono</label>
+               </div>
+               <div class="form-field col-lg-12">
+                  <input id="message" class="input-text js-input" type="text" required>
+                  <label class="label" for="message">Mensaje</label>
+               </div>
+               <div class="form-field col-lg-12 button">
+                  <input class="submit-btn" type="submit" value="Enviar">
+               </div>
+            </form>
+         </section>
+         
         </main>
 
         <footer id="sticky-footer" class="py-4 footerConfig">
