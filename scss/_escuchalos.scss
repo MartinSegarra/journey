@@ -1,12 +1,23 @@
-.loClasico {
 
-    padding-bottom:80px;
-    margin: 10px;
+
+.escuchalos_white {
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding-left:10px; 
+    padding-top: 5px;
 }
 
 iframe {
 
-    padding:10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 991px) {
+	iframe {
+		text-align: center;
+    }
+    .centerPlaylist { 
+        text-align: center;
+        
+    }
+}
